@@ -1,0 +1,54 @@
+ ls
+    2  sudo yum install git
+    3  ls
+    4  git -version
+    5  sudo yum install java
+    6  ls
+    7  java -version
+    8  wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.3/bin/apache-tomcat-8.5.3.tar.gz
+    9  ls
+   10  tar -xvf apache-tomcat-8.5.3.tar.gz
+   11  ls
+   12  cd apache-tomcat-8.5.3/
+   13  ls
+   14  sudo yum install maven
+   15  ls
+   16  mvn clean install
+   17  cd bin/
+   18  ls
+   19  mvn clean install
+   20  ls
+   21  cd ..
+   22  ls
+   23  git clone https://github.com/chandra635313/simple-java-project.git
+   24  ls
+   25  cd simple-java-project/
+   26  ls
+   27  mvn clean install
+   28  ls
+   29  cp -r target/* /home/ec2-user/apache-tomcat-8.5.3/webapps/
+   30  ls
+   31  cd ..
+   32  cd bin/
+   33  ls
+   34  cd apache-tomcat-8.5.3/
+   35  ls
+   36  cd bin/
+   37  ls
+   38  sh startup.sh
+   39  sh shutdown.sh
+   40  sh startup.sh
+   41  sh shutdown.sh
+   42  sh startup.sh
+   43  cd ..
+   44  ls
+   45  cd conf/
+   46  ls
+   47  vi tomcat-users.xml
+   48  pwd
+   49  ls
+   50  cd ..
+   51  find . -name context.xml
+   52  vi /webapps/host-manager/META-INF/context.xml
+   53  vi ./webapps/manager/META-INF/context.xml
+   54  history
